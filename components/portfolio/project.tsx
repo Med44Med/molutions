@@ -80,7 +80,7 @@ const Project = ({ data }) => {
                 {data.platform.includes("mobile") && <div className='px-5 py-1 bg-background rounded-xl flex items-center justify-center gap-2 '><FcAndroidOs /><h6 className='text-xs font-medium'>Mobile app</h6></div>}
               </div>
               <h1 className="text-xs text-secondText font-medium">{data.content}</h1>
-              <div className='mt-auto ml-auto px-5 py-1 bg-primary rounded-md text-light cursor-pointer flex justify-center items-center gap-2 hover:gap-3'><h1>Visit</h1><LuArrowUpRight /></div>
+              <Link  href={`/portfolio/${data.name}`} className='mt-auto ml-auto px-5 py-1 bg-primary rounded-md text-light cursor-pointer flex justify-center items-center gap-2 hover:gap-3'><h1>Visit</h1><LuArrowUpRight /></Link>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const Header = () => {
         </Link>
         <Link href="/contact">Contact us</Link>
         <div onClick={()=>toggleTheme()} className='cursor-pointer'>
-          <h1>{theme}</h1>
+          <h1>{theme=== 'light' ? 'dark' :'light'}</h1>
         </div>
       </nav>
     </header>
