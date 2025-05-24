@@ -56,6 +56,7 @@ main {
 }
 
 * {
+  box-sizing: border-box;
   font-family: var(--font-poppins);
   transition: all 0.3s ease-out;
 }
@@ -73,4 +74,22 @@ main {
     opacity: 1;
     transform: translateY(0px);  
   }
+}
+
+.swiper-button-prev,.swiper-button-next{
+ color:var(--primary) !important;
+}
+.swiper-button-prev::after,.swiper-button-next::after{
+ font-size: 20px !important;
+ font-weight: 800;
+}
+.swiper-pagination-bullet-active{
+  background: var(--primary) !important;
+}
+
+.heightChange {
+  -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease;
 }
